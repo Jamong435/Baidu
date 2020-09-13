@@ -1,0 +1,220 @@
+html,body{margin: 0; padding: 0; white-space : nowrap;}
+#hompage{display: none;}
+#mobile{display: block;
+   
+}
+
+#header{
+    width: 100%;
+    height: 50px;
+   display: flex;
+   justify-content: space-between;
+}
+input[id="menuicon"] {display:none;}
+input[id="menuicon"] + label {display:block;margin:15px;width:30px;height:20px;position:relative;cursor:pointer;}
+input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:5px;border-radius:2px;background:#ccc;transition:all .35s;}
+input[id="menuicon"] + label span:nth-child(1) {top:0;}
+input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} 
+input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+input[id="menuicon"]:checked + label {z-index:2;}
+input[id="menuicon"]:checked + label span {background:#ccc;}
+input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+div[class="sidebar"] {width:300px;height:100%;background:white;position:fixed;top:0;left:-300px;z-index:1;transition:all .35s;}
+input[id="menuicon"]:checked + label + div {left:0;}
+
+
+#sidebar1{
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    padding-left: 30px;
+}
+#sidebar1 p{ padding-left: 10px; font-size: 20px;}
+#aa{display: flex; padding: 10px; padding-bottom: 0; justify-content: baseline;}
+#aa i {padding: 5px; padding-left: 15px;}
+#wrapper_mobile{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+#player{
+    padding: 10px;
+    display: flex;
+    
+    width: 250px;
+    height: 50px;
+   
+}
+#ani{
+    display: flex;
+    justify-content: center;
+   padding: 20px;
+    
+}
+#serchbox_mobile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+#index-kw{
+    padding: 15px;
+    border-right: 0;
+    
+}
+#index-bn{
+    border-left: 0;
+    border-right: 0;
+    padding: 12px;
+    background-color: white;
+   
+}
+#ad{
+    margin-top: 10px;
+    width: 100%;
+    height: 20em;
+   
+}
+
+/* 슬라이드관련 */
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+    display: none;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+ 
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* 슬라이드 관련 */
+
+#wrapper_container{
+    width: 100%;
+    margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#textarea{
+    width: 96%;
+}
+#textarea div:nth-child(1){
+   
+}
+#textarea div:nth-child(2){
+    width: 100%;   
+}
+#textarea div:nth-child(3){
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+
+}
+#textarea div:nth-child(4){
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ccc;
+   
+}
+#textarea div:nth-child(5){
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ccc;
+   
+}
+#colum{display: flex; flex-direction: column;}
+
+#container{
+    width: 100%;
+    justify-content: start;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    width: 100%;
+    padding: 3px; margin: 0;
+   
+}
+#container2{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+#container2 a{color: #333;}
+
+
+#container a{ text-decoration: none; color: #333; } 
+#container:checked{opacity: 0.5;}
